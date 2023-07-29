@@ -1,0 +1,73 @@
+/* color */
+$color-main: #D41443;
+$color-second: #FFA5BA;
+$color-text: #ffffff;
+$color-background-about: #FFF5F6;
+$black: #000000;
+$light-rose: #907E82;
+$hover: #ECEBEB;
+$customer-dot: #C7133E;
+$customer-menu: #D9D9D9;
+$customer-text-background: #FAFAFA;
+
+$font-titan: "Titan One", cursive;
+$font-sans: 'DM Sans', sans-serif;
+
+$font-main: 16px;
+$font-h2: 34px;
+$font-size18: 18px;
+$font-size12: 12px;
+$font-size14: 14px;
+$font-size48: 48px;
+$font-size26: 26px;
+$font-size30: 30px;
+
+//font-weight
+$light: 400;
+$medium: 500;
+$bold: 700;
+
+//letter-spacing
+$letter04: 0.04em;
+$letter06: 0.06em;
+
+
+body {
+  color: $color-main;
+  font-family: $font-titan;
+  font-size: $font-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: $color-main;
+  }
+}

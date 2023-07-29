@@ -1,0 +1,297 @@
+li {
+  list-style-type: none;
+}
+
+.section_contacts {
+  background-image: linear-gradient(to bottom, #ffffff 13%, #fff5f6 13%, #fff5f6 100%);
+}
+.contacts__header {
+  display: none;
+}
+.contacts {
+  min-width: 220px;
+  width: 220px;
+  padding: 43px 20px;
+  border-radius: 30px;
+  background-color: $color-text;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  display: inline-grid;
+}
+.contacts__cafe {
+  width: 80px;
+  height: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f0d1a5;
+  color: $color-text;
+  font-size: 12px;
+  font-family: $font-sans;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.395;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.contacts__foodtruck {
+  width: 130px;
+  height: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #c2e297;
+  color: $color-text;
+  font-size: 12px;
+  font-family: $font-sans;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.395;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.contacts__address {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #907e82;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.contacts__address-paragraf {
+  color: #000000;
+  font-size: 12px;
+  font-family: $font-sans;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.395;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.contacts__open-time {
+  padding-bottom: 10px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $color-second;
+}
+.contacts__open-time-paragraf {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+.contacts__tel {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #907e82;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 25px;
+  margin-top: 15px;
+}
+.contacts__tel-mail {
+  cursor: pointer;
+  color: #907e82;
+  text-decoration: none;
+}
+.contacts__tel-mail:hover,
+.contacts__tel-mail:focus {
+  color: #907e82;
+}
+
+.contacts__mail {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #907e82;
+  padding-top: 5px;
+}
+.btn-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-contacts__our-locations {
+  font-family: DM Sans;
+  font-size: $font-main;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $color-text;
+  background-color: $color-main;
+  width: 161px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  margin-top: 44px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.btn-contacts__franchise {
+  font-family: DM Sans;
+  font-size: $font-main;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $color-main;
+  background-color: $color-text;
+  width: 161px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-div {
+    display: flex;
+    justify-content: center;
+  }
+  .contacts:not(:last-child) {
+    margin-right: 20px;
+  }
+  .section_contacts {
+    background-image: linear-gradient(to bottom, #ffffff 23%, #fff5f6 23%, #fff5f6 100%);
+  }
+  .btn-contacts {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .btn-contacts__our-locations {
+    margin-top: 81px;
+    margin-bottom: 0;
+    margin-right: 14.5px;
+    width: 191.45px;
+  }
+  .btn-contacts__franchise {
+    margin-top: 81px;
+    width: 174.05px;
+  }
+  .contacts__cafe {
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  .contacts__foodtruck {
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  .contacts__address-paragraf {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__address {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__open-time-paragraf {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__open-time {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__tel {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+  .contacts__mail {
+    font-size: 14px;
+    line-height: 1.628;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section_contacts {
+    background-image: url('/images/section-contacts-bg.svg'),
+      linear-gradient(to bottom, #ffffff 23%, #fff5f6 23%, #fff5f6 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .contacts {
+    width: 330px;
+  }
+  .contacts:not(:last-child) {
+    margin-right: 31px;
+  }
+  .btn-contacts__our-locations {
+    margin-top: 86px;
+    margin-right: 15px;
+    width: 198px;
+    &:hover,
+    &:focus {
+      background-color: $customer-dot;
+    }
+  }
+  .btn-contacts__franchise {
+    margin-top: 86px;
+    width: 180px;
+    &:hover,
+    &:focus {
+      background-color: $hover;
+    }
+  }
+  .contacts__address-paragraf {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  .contacts__address {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .contacts__open-time-paragraf {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .contacts__open-time {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .contacts__tel {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .contacts__mail {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .footer-socialmedia__div:hover,
+  .footer-socialmedia__div:focus {
+    background-color: $color-main;
+  }
+}

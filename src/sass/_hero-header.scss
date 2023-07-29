@@ -1,0 +1,542 @@
+.hero-header {
+  padding-top: 6px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  
+    &::after {
+      content: "";
+      height: 344px;
+      width: 346px;
+      position: absolute;
+      top: 83px;
+      left: 16px;
+      border-radius: 50%;
+      background-color: $color-second;
+      z-index: -2;
+    }
+}
+
+.main-nav {
+  display: none;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  padding-right: 20px; 
+  fill: $color-main; 
+
+  &:hover,
+  &:focus {
+    fill: $color-second;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 12px;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+
+  &__right,
+  &__paragraf,
+  &__arrow  {
+    display: none;
+  }
+  
+  &__ice {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    z-index: -1;
+  }
+
+  &__girl,
+  &__milk {
+    display: none;
+  }
+}
+
+.buy-btn {
+    display: none;
+    background-color: $color-text;
+    border: none;
+    border-radius: 22px;
+    font-family: $font-sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    color: $color-main;
+    width: 160px;
+    height: 44px;
+    margin-bottom: 19px;
+    cursor: pointer;
+    transition: background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: #ECEBEB;
+    }
+
+    &__icon {
+      margin-left: 10px;
+    }
+}
+
+.hero-title {
+  font-size: 26px;
+  line-height: 1.1538;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 137px;
+  padding-bottom: 19px;
+  max-width: 218px;
+  text-align: left;
+  z-index: 2;
+
+  &_accent {
+    font-size: 48px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: $color-main;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 160px;
+}
+
+.hero-btn {
+  font-family: $font-sans;
+  font-size: 8px;
+  line-height: 10px;
+  border: none;
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 7px 15px 7px 13px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+
+  &__link {
+    text-decoration: none; 
+    color: inherit;
+  }
+
+  &:first-child {
+    margin-right: 8px;
+  }
+
+  &_red {
+    background-color: $color-main;
+    color: #FFFFFF;
+
+    &:hover,
+    &:focus {
+      background-color: #C7133E;
+      color: #FFFFFF;
+    }
+  }
+
+  &_white {
+    color: $color-main;
+    background-color: $color-text;
+
+    &:hover,
+    &:focus {
+      background-color: #ECEBEB;
+      color: #C7133E;
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: visibility 250ms linear, opacity 250ms linear;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  transform: translateX(0);
+  margin: 0 auto;
+  background-color: #E17992;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms linear;
+
+  .is-hidden & {
+    transform: translateX(100%);
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    background-color: transparent;
+    border: none;
+    fill: $color-text;
+
+    &:hover,
+    &:focus {
+      fill: $color-main;
+    }
+  }
+
+  &__wrapper {
+    padding-top: 60px;
+  }
+
+  &__list {
+    font-family: $font-sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2875;
+    text-align: left;
+  }
+
+  &__item {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-top: 1px solid #E18298;
+    width: 100%;
+    &:last-child {
+      border-bottom: 1px solid #E18298;
+    }
+  }
+
+  &__link {
+    color: $color-text;
+    padding-left: 20px;
+  }
+
+  &__btn {
+    background-color: $color-text;
+    border: none;
+    border-radius: 22px;
+    font-family: $font-sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    color: $color-main;
+    width: 209px;
+    height: 44px;
+    margin-bottom: 19px;
+    position: relative;
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}
+
+.numbers {
+  &__item{
+    font-size: 28px;
+    line-height: 1.1428;    
+    text-align: right;
+    letter-spacing: 0.04em;
+    position: relative;
+    padding-right: 10px;
+
+    &:first-child {
+      margin-bottom: 23px;
+    }
+
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+      background-color: $color-text;
+      z-index: -1;
+    }
+  }
+
+  &__paragraf {
+    font-family: $font-sans;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 22px;
+    line-height: 1.363;
+    padding-top: 15px;    
+    padding-bottom: 20px;
+    max-width: 162px;
+
+    &_accent {
+      font-size: 34px;
+      line-height: 0.912;
+    }
+  }
+
+  .hero {
+  
+    &__right {
+      display: block;
+    }
+
+    &__paragraf {
+      display: block;
+      max-width: 116px;
+      font-family: $font-sans;
+      font-size: 8px;
+      line-height: 1.5;
+      color: $color-text;
+      text-align: left;
+      margin-bottom: 59px;
+      margin-left: 120px;
+      position: relative;
+    }
+
+    &__arrow {
+      display: block;
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+    }
+    
+    &__ice {
+      right: 213px;
+    }
+
+    &__girl {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &__milk {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 28px;
+    }
+  }
+
+  .buy-btn {
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+
+  .hero-header {
+    padding-top: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 322px;
+      width: 324px;
+      position: absolute;
+      top: 31px;
+      left: 273px;
+    }
+  }
+
+  .page-nav {
+    &__logo {
+      padding-top: 37px;
+    }
+
+    &__btns {
+      padding-top: 38px;
+    }
+  }
+
+  .btn-wrapper {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  
+  .hero-title {
+    font-size: 38px;
+    line-height: 1.579;
+    padding-top: 84px;
+    max-width: 277px;
+    padding-bottom: 25px;
+
+    &_accent {
+      font-size: 58px;
+      line-height: 0.8965;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  }
+
+  .hero {
+    
+    &__paragraf {
+      max-width: 200px;
+      font-size: 14px;
+      line-height: 1.428;
+      margin-bottom: 102px;
+      margin-left: 180px;
+      position: relative;
+    }
+
+    &__left {
+      padding-left: 115px;
+    }
+
+    &__right {
+      padding-right: 97px;
+    }
+
+    &__arrow {
+      bottom: -46px;
+      left: 0;
+    }
+    
+    &__ice {
+      right: 450px;
+    }
+
+    &__girl {
+      bottom: 0;
+      right: 109px;
+    }
+
+    &__milk {
+      left: 77px;
+      bottom: 45px;
+    }
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .buy-btn {
+    margin-bottom: 0;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    font-family: $font-sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+
+    &__link {      
+    color: $color-text;
+    }
+
+    &__item {
+      &:not(:last-child){
+        margin-right: 35px;
+      }
+    }
+  }
+
+  .page-nav {
+    padding-left: 39px;
+    padding-top: 38px;
+    padding-right: 115px;
+
+      &__logo {
+        padding-top: 0;
+      }
+  
+      &__btns {
+        padding-top: 0;
+      }
+    }
+
+  .btn-wrapper {
+    padding-bottom: 112px;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    line-height: 1.2857;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 11px 23px 11px 23px;
+  
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+
+  .hero-header {
+
+    &::after {
+      content: "";
+      height: 538px;
+      width: 538px;
+      position: absolute;
+      top: 52px;
+      left: 475px;
+    }
+  }
+
+  .numbers {
+    margin-top: 73px;
+
+    &__item{
+      font-size: 46px;
+      line-height: 1.1522;    
+      text-align: right;
+      padding-right: 18px;
+  
+      &:first-child {
+        margin-bottom: 23px;
+      }
+  
+      &::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+      }
+    }
+  
+    &__paragraf {
+      font-size: 14px;
+      line-height: 1.2875;
+    }
+  }
+}
+

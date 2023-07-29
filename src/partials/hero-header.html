@@ -1,0 +1,187 @@
+<header class="section section_hero-header" id="hero-header">
+  <div class="container container_hero-header">
+    <div class="hero-header">
+      <nav class="page-nav">
+        <a class="page-nav__logo" href="#">
+          <img src="images/hero-header/main-logo.svg" alt="main logo" />
+        </a>
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#hero-header">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#advantages">About us</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#about">How it’s made?</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#products">Our products</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+        <div class="page-nav__btns">
+          <button class="burger-btn" data-menu-open>
+            <svg class="burger-btn__icon" width="20" height="12">
+              <use href="images/hero-header/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="buy-btn">
+            Buy now
+            <svg class="buy-btn__icon" width="8" height="10">
+              <use href="images/hero-header/icons.svg#icon-buy"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="hero__left">
+          <h1 class="hero-title">
+            ice cream made with <span class="hero-title_accent">passion</span>
+          </h1>
+          <div class="btn-wrapper">
+            <button class="hero-btn hero-btn_red" type="button">
+              <a class="hero-btn__link" href="#products">Products</a></button>
+            <button class="hero-btn hero-btn_white" type="button">
+              <a class="hero-btn__link" href="#about">How it’s made?</a></button>
+          </div>
+          <p class="hero__paragraf">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            <picture class="hero__arrow">
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/hero-header/arrow-desktop.png    1x,
+                  ./images/hero-header/arrow-desktop@2x.png 2x
+                "
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hero-header/arrow-tablet.png    1x,
+                  ./images/hero-header/arrow-tablet@2x.png 2x
+                "
+              />
+
+              <img src="./images/hero-header/arrow-tablet.png" alt="arrow" />
+            </picture>
+          </p>
+        </div>
+        <div class="hero__right">
+          <ul class="numbers list">
+            <li class="numbers__item">
+              16
+              <p class="numbers__paragraf">cafes</p>
+            </li>
+            <li class="numbers__item">
+              23
+              <p class="numbers__paragraf">food truck</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <picture class="hero__ice">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/hero-header/ice-desktop.png    1x,
+            ./images/hero-header/ice-desktop@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/hero-header/ice-tablet.png 1x, ./images/hero-header/ice-tablet@2x.png 2x"
+        />
+
+        <source
+          media="(min-width: 320px)"
+          srcset="./images/hero-header/ice-mobile.png 1x, ./images/hero-header/ice-mobile@2x.png 2x"
+        />
+
+        <img src="./images/hero-header/ice-mobile.png" alt="ice" />
+      </picture>
+
+      <picture class="hero__girl">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/hero-header/girl-desktop.png    1x,
+            ./images/hero-header/girl-desktop@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-header/girl-tablet.png    1x,
+            ./images/hero-header/girl-tablet@2x.png 2x
+          "
+        />
+
+        <img src="./images/hero-header/girl-tablet.png" alt="girl" />
+      </picture>
+
+      <picture class="hero__milk">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/hero-header/milk-desktop.png    1x,
+            ./images/hero-header/milk-desktop@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-header/milk-tablet.png    1x,
+            ./images/hero-header/milk-tablet@2x.png 2x
+          "
+        />
+
+        <img src="./images/hero-header/milk-tablet.png" alt="milk" />
+      </picture>
+
+      <div class="backdrop is-hidden" data-menu>
+        <div class="mobile">
+          <div class="mobile__wrapper">
+            <button class="mobile__btn">
+              Buy now
+              <svg class="mobile__icon" width="8" height="10">
+                <use href="images/hero-header/icons.svg#icon-buy"></use>
+              </svg>
+            </button>
+            <ul class="mobile__list list">
+              <li class="mobile__item">
+                <a class="mobile__link link" href="#hero-header">Home</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link link" href="#advantages">About us</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link link" href="#about">How it’s made?</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link link" href="#products">Our products</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link link" href="#contacts">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="mobile__close-btn" data-menu-close>
+            <svg width="14" height="14">
+              <use href="images/hero-header/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

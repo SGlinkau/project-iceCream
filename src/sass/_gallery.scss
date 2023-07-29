@@ -1,0 +1,38 @@
+.gallery {
+  height: 100%;
+}
+
+.gallery .container {
+  padding: 0 0;
+  margin: 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+.gallery__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 20;
+}
+
+@media screen and (min-width: 320px) {
+  .gallery__background-color {
+    height: 48px;
+    background-color: #fff5f6;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery__background-color {
+    height: 105px;
+    background-color: #fff5f6;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    .gallery__background-color {
+    height: 170px;
+    background-color: #fff5f6;
+  }
+}

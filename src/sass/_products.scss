@@ -1,0 +1,156 @@
+@import "_common";
+
+.products-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-second;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+.products-title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  color: $color-main;
+  padding-bottom: 31px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 55px;
+    padding-bottom: 39px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 66px;
+    padding-bottom: 43px;
+  }
+}
+
+.product-list {
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.product-list__space {
+  padding-top: 140px;
+  
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    
+    
+    width: 220px;
+    // margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: relative;    
+    width: 335px;
+    // margin-right: 20px;
+  }
+}
+
+.product-list__photo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-list__item {
+  border-radius: 24px;
+  padding-top: 161px;
+  margin-top: -13px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 152px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 210px;
+  }
+}
+
+  .product-list__title {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $color-text;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+  }
+
+  .dots {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 32px;
+    }
+  }
+
+  .product-list__information {
+    font-family: $font-sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $color-text;
+    padding-left: 41px;
+    padding-right: 39px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 176%;
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
+
+  .product-list__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 41px;
+  }
+
+  .product-list__item--ice-cream-color {
+    background: #FFB8CA;
+  }
+
+  .product-list__item--ice-coffee-color {
+    background: #F0D1A5;
+  }
+
+  .product-list__item--milkshakes-color {
+    background: #C2E297;
+  }

@@ -1,0 +1,31 @@
+.container {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  &_hero-header {
+    background-color: #FFB8CA;
+    padding-right: 0;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 34px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 115px;
+    &_hero-header {
+      padding: 0;
+    }
+  } 
+}
+
+
